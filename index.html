@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <title>FlowPitch — Stephen Rando</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background gradient layers (also cloned into #pdfStage during export) -->
+  <div class="bgLayer bg0" aria-hidden="true"></div>
+  <div class="bgLayer bg1" aria-hidden="true"></div>
+  <div class="bgLayer noise" aria-hidden="true"></div>
+
+  <header id="topNav" class="glass">
+    <div class="navInner">
+      <div class="brand">
+        <span class="brandDot" aria-hidden="true"></span>
+        <span id="brandTitle">Deck</span>
+      </div>
+      <div class="navActions">
+        <button id="prevBtn" type="button" class="navBtn" aria-label="Previous slide">Prev</button>
+        <button id="nextBtn" type="button" class="navBtn" aria-label="Next slide">Next</button>
+        <button id="exportPdfBtn" type="button" class="primaryBtn">Export PDF</button>
+      </div>
+    </div>
+    <div id="topProgress" aria-hidden="true"><div id="topProgressBar"></div></div>
+  </header>
+
+  <nav id="sideDots" aria-label="Slide progress"></nav>
+
+  <main id="deck" tabindex="0" aria-live="polite">
+    <div id="slides" class="slides"></div>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
